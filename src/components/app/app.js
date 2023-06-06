@@ -84,12 +84,12 @@ class App extends Component{
     }
 
     filterElement = (items, filterName) => {
-        if (filterName == 'more1k') {
+        if (filterName === 'more1k') {
             return items.filter(item => item.salary > 1000)
 
         }
-        else if (filterName == 'rise') return items.filter(item => item.rise)
-        else if (filterName == 'sort_alf') {
+        else if (filterName === 'rise') return items.filter(item => item.rise)
+        else if (filterName === 'sort_alf') {
             return items.sort((a, b) => a.name > b.name ? 1: -1)
         }
         else {
