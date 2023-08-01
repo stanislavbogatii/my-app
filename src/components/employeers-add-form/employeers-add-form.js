@@ -52,15 +52,19 @@ class EmployersAddForm extends Component{
             <AddFormDiv>
                 <h3>Добавьте нового сотрудника</h3>
                 <AddForm className="d-flex"
-                onSubmit={this.onSubmit}>
+                onSubmit={this.onSubmit}
+                style={{ flexWrap: 'wrap', rowGap: 20 }}>
                     <input 
                     type="text" 
+                    style={{ width: 300}}
                     className="form-control new-post-label" 
                     name='name'
                     value={name}
                     placeholder="Как его зовут?"
                     onChange={this.onValueChange}/>
-                    <input type="text" 
+                    <input 
+                    type="text" 
+                    style={{ width: 300}}
                     className="form-control new-post-label" 
                     placeholder="З/П в $?"
                     name='salary'

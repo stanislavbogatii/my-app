@@ -1,8 +1,13 @@
 import { Component } from 'react';
 import styled from 'styled-components';
+import "./app-filter.css";
 
 const Buttons = styled.div `
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
 `
 
 class AppFilter extends Component {
@@ -30,8 +35,8 @@ class AppFilter extends Component {
 
     render() {
         const {all, rise, more1k, sort_alf} = this.state;
-        const active = "btn btn-light";
-        const disabled = "btn btn-outline-light";
+        const active = "btn btn-light filter_button";
+        const disabled = "btn btn-outline-light filter_button";
         
         return (
             <Buttons>

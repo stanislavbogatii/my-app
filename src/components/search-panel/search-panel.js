@@ -23,7 +23,7 @@ class SearchPanel extends Component {
                 placeholder="Найти сотрудника"
                 value={this.state.term}
                 onChange={this.onUpdateSearch}
-                />
+            />
         )
     }
 }
