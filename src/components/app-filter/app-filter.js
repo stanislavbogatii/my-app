@@ -22,7 +22,7 @@ class AppFilter extends Component {
     }
 
     onFilter = (e) => {
-        const filterName = [e.currentTarget.name];
+        const filterName = e.currentTarget.name;
         this.setState({
             more1k: false,
             rise: false,
